@@ -8,7 +8,9 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'engineering-hub';
-  constructor(private router: Router) { }
+  constructor(private router: Router) { 
+    // console.log(this.router.url)
+  }
 
   ngOnInit(): void {
   }
@@ -16,5 +18,10 @@ export class AppComponent {
 
   onLogin() {
     this.router.navigateByUrl('/login')
+  }
+
+  getPath(){
+    console.log(this.router.url)
+    return this.router.url;
   }
 }

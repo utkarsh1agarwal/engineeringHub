@@ -14,20 +14,20 @@ export class HomeComponent implements OnInit {
 
   poc_data = [
     {
-      poc_icon: "bi bi-buildings",
-      title: "CRUD Operations",
-      desc: "A simple poc to perform the crud operation using jenkins angular, databse etc",
+      poc_icon: "bi bi-incognito",
+      title: "Tweets List",
+      desc: "A simple poc see the list of tweets via API, database, jenkins etc",
       demo_link: "",
-      team_name: "EGAAA_RA",
+      team_name: "RA",
       team_member: [
-        "A", "B", "C", "D"
+        "Milan", "Anshu", "Santosh", "Utkarsh"
       ],
-      team_lead: "ABC"
+      team_lead: "Parashar"
     },
     {
       poc_icon: "bi bi-command",
-      title: "CRUD Operations",
-      desc: "A simple poc to perform the crud operation using jenkins angular, databse etc",
+      title: "Jenkin Jobs",
+      desc: "A poc automate for the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery",
       demo_link: "",
       team_name: "2",
       team_member: [

@@ -23,10 +23,15 @@
 
       </nav><!-- End Nav Menu -->
 
-      <a class="btn btn-primary" (click)="onLogin()">Login</a>
+      <a class="btn btn-primary" *ngIf="getPath() == '/home'" (click)="onLogin()">Team Login</a>
+      <a class="btn btn-warning" *ngIf="getPath() == '/dashboard'" href="/">Logout</a>
+
+      <!-- <button (click)="getPath()">aa</button> -->
 
     </div>
   </header><!-- End Header -->
+
+  <!-- <app-misc></app-misc> -->
   <router-outlet></router-outlet>
   <!-- <app-home></app-home> -->
 

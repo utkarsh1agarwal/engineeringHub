@@ -26,8 +26,8 @@
 
             <!--  Section Title -->
             <div class="container section-title" data-aos="fade-up">
-              <h2>Key topics</h2>
-              <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+              <h2>Engineering Enablement</h2>
+              <p>Engineering Enablement teams’ main goal is to reduce complexity and improve development velocity and time to market by providing self-service solutions, engineering standards, and best practices. The team aims to enable developers to focus on business logic and puts an emphasis on developer experience and product quality (Delivered to production).</p>
             </div><!-- End Section Title -->
       
             <div class="container">
@@ -36,10 +36,10 @@
       
                 <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
                   <div class="service-item d-flex">
-                    <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+                    <div class="icon flex-shrink-0"><i class="bi bi-cloud-check"></i></div>
                     <div>
-                      <h4 class="title"><a href="services-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-                      <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                      <h4 class="title"><a class="stretched-link">Cloud AWS & Azure</a></h4>
+                      <p class="description">Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.</p>
                     </div>
                   </div>
                 </div>
@@ -47,53 +47,45 @@
       
                 <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
                   <div class="service-item d-flex">
-                    <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+                    <div class="icon flex-shrink-0"><i class="bi bi-code-square"></i></div>
                     <div>
-                      <h4 class="title"><a href="services-details.html" class="stretched-link">Dolor Sitema</a></h4>
-                      <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                      <h4 class="title"><a class="stretched-link">Micro services</a></h4>
+                      <p class="description">In software engineering, a microservice architecture is a variant of the service-oriented architecture structural style.</p>
                     </div>
                   </div>
                 </div><!-- End Service Item -->
       
                 <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
                   <div class="service-item d-flex">
-                    <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+                    <div class="icon flex-shrink-0"><i class="bi bi-code"></i></div>
                     <div>
-                      <h4 class="title"><a href="services-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-                      <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                      <h4 class="title"><a class="stretched-link">Docker</a></h4>
+                      <p class="description">Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.</p>
                     </div>
                   </div>
                 </div><!-- End Service Item -->
       
                 <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
                   <div class="service-item d-flex">
-                    <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+                    <div class="icon flex-shrink-0"><i class="bi bi-github"></i></div>
                     <div>
-                      <h4 class="title"><a href="services-details.html" class="stretched-link">Magni Dolores</a></h4>
-                      <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                      <h4 class="title"><a class="stretched-link">GitHub</a></h4>
+                      <p class="description">GitHub, Inc. is a platform and cloud-based service for software development and version control using Git, allowing developers to store and manage their code.</p>
                     </div>
                   </div>
                 </div><!-- End Service Item -->
       
                 <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
                   <div class="service-item d-flex">
-                    <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+                    <div class="icon flex-shrink-0"><i class="bi bi-file-earmark-code-fill"></i></div>
                     <div>
-                      <h4 class="title"><a href="services-details.html" class="stretched-link">Nemo Enim</a></h4>
-                      <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                      <h4 class="title"><a class="stretched-link">Coding best practices</a></h4>
+                      <p class="description">Coding best practices or programming best practices are a set of informal rules that many software developers in computer programming follow to improve software quality</p>
                     </div>
                   </div>
                 </div><!-- End Service Item -->
       
-                <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
-                  <div class="service-item d-flex">
-                    <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-                    <div>
-                      <h4 class="title"><a href="services-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
-                      <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                    </div>
-                  </div>
-                </div><!-- End Service Item -->
+
       
               </div>
       
@@ -132,8 +124,9 @@
                             </strong>
                             </p>
                         <p class="mt-3"> Team members: 
-                            <span *ngFor="let name of data.team_member">
-                                {{name}}
+                            <span style="display: block;" *ngFor="let name of data.team_member">
+                              <li>{{name}}</li>
+                              
                             </span>
                         </p>
                       </div>
@@ -147,4 +140,92 @@
       </div>
 
     </section><!-- End About Section -->
+    <!-- Team Section - Home Page -->
+    <section id="team" class="team">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Mentors</h2>
+        <p>Industrty experts</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5 mb-4">
+          <div class="col-lg-4 col-md-4 member m-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="assets/img/team/p4.jpeg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Shanthakumar Shanmugham</h4>
+              <span>Chief Architect</span>
+              <p>One line description</p>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+
+        <div class="row mt-4 gy-5">
+
+
+
+          <div class="col-lg-4 col-md-4 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="assets/img/team/kumar.jpeg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Kumarasamy Perumalsamy</h4>
+              <span>Architect</span>
+              <p>One line description</p>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-lg-4 col-md-4 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="assets/img/team/p2.jpeg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Parashar Harekal</h4>
+              <span>Architect</span>
+              <p>One line description</p>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-lg-4 col-md-4 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="assets/img/team/p3.jpeg" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Puneet Kankane</h4>
+              <span>Architect</span>
+              <p>One line description</p>
+            </div>
+          </div><!-- End Team Member -->
+          
+
+
+          
+
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- End Team Section -->
+
 </main>
