@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
   getPath(){
-    console.log(this.router.url)
+    // console.log(this.router.url)
     return this.router.url;
   }
 }

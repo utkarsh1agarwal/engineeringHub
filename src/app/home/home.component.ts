@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+ 
 
   ngOnInit(): void {
   }
@@ -48,9 +49,17 @@ export class HomeComponent implements OnInit {
     }
   ]
 
-  onclick() {
-    alert("111")
-    console.log("1111")
+  constructor(private api: BackendService) { 
+
+    this.api.load_poc().subscribe((r:any) => {
+      if(r) {
+        this.poc_data = r[0].poc_data
+        console.log("rrr",this.poc_data)
+      }
+    })
+
+    // console.log(JSON.stringify(this.poc_data))
   }
+
 
 }
